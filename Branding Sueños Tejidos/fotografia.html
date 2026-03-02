@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Fotografía | Sueños Tejidos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg" href="img/amigo.jpeg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container navbar-container">
+
+        <div class="navbar-brand-container">
+            <img src="img/Logo.jpeg" alt="Logo Sueños Tejidos" class="logo">
+            <span class="navbar-brand">Sueños Tejidos</span>
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="bi bi-list"></i>
+        </div>
+
+        <ul class="navbar-menu" id="navbar-menu">
+            <li><a href="index.html"><i class="bi bi-house"></i> Inicio</a></li>
+            <li><a href="materiales.html"><i class="bi bi-bag"></i> Productos</a></li>
+            <li><a href="introduccion.html"><i class="bi bi-question-circle"></i> Quiénes Somos</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+<section class="hero-simple">
+    <h1>Que Usamos</h1>
+    <h2>Fotografía</h2>
+</section>
+
+<section class="content-box">
+    <p>La fotografía es parte de la identidad visual de la marca. No se trata solo de tomar fotos bonitas, sino de que cada imagen represente los valores de Sueños Tejidos. Una foto coherente refuerza la identidad; una foto que no lo es, la debilita.</p>
+
+    <h2>El estilo general</h2>
+    <p>Las fotos deben sentirse cálidas, cercanas y artesanales. Siempre con luz natural y fondos neutros o tonos crema. Una buena foto de la marca no necesita producción elaborada, necesita honestidad y calidez.</p>
+    <img src="img/amigurumi.jpg" alt="Amigurumi">
+
+    <h2>Qué fotografiar</h2>
+    <p>Piezas terminadas, el proceso de tejido, manos trabajando, materiales sobre una superficie limpia y la pieza junto a su dueño. Cada momento cuenta una parte de la historia de la marca.</p>
+    <img src="img/manos.jpg" alt="Manos tejiendo">
+
+    <h2>Los materiales</h2>
+    <p>Fotos de materiales deben mostrar el hilo, la aguja y los accesorios de forma ordenada y con buena luz. Se transmite que detrás de cada pieza hay un proceso cuidadoso.</p>
+    <img src="img/hilo.jpg" alt="Materiales e hilo">
+
+    <h2>El plano cenital</h2>
+    <p>El plano desde arriba es ideal para mostrar piezas terminadas, materiales o procesos. Permite ver todos los elementos de forma clara y estética.</p>
+    <img src="img/cenital.jpg" alt="Plano cenital">
+
+    <h2>Lo que se debe evitar</h2>
+    <p>Fondos llamativos o de colores fuera de la paleta de la marca, filtros agresivos, fotos oscuras o con luz artificial dura, y encuadres que industrialicen la pieza. La identidad de Sueños Tejidos es artesanal y cercana.</p>
+     <div class="botones">
+        <a href="materiales.html" class="btn-main">
+            <i class="bi bi-arrow-left"></i> Volver
+        </a>
+    </div>
+
+    <div style="text-align:center; margin-top:30px;">
+        <a href="index.html" class="btn-main">
+            <i class="bi bi-arrow-left"></i> Volver al inicio
+        </a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Sueños Tejidos - Hecho a mano con amor 🧶
+</footer>
+
+<script>
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("navbar-menu");
+
+    toggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
+</script>
+
+</body>
+</html>
