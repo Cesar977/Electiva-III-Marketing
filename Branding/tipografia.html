@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tipografía | Sueños Tejidos</title>
+    <link rel="icon" type="image/jpeg" href="amigo.jpeg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container navbar-container">
+
+        <div class="navbar-brand-container">
+            <img src="Logo.jpeg" alt="Logo Sueños Tejidos" class="logo">
+            <span class="navbar-brand">Sueños Tejidos</span>
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="bi bi-list"></i>
+        </div>
+
+        <ul class="navbar-menu" id="navbar-menu">
+            <li><a href="index.html"><i class="bi bi-house"></i> Inicio</a></li>
+            <li><a href="introduccion.html"><i class="bi bi-question-circle"></i> Quiénes Somos</a></li>
+            <li><a href="materiales.html"><i class="bi bi-bag"></i> Materiales</a></li>
+            <li><a href="#"><i class="bi bi-envelope"></i> Contacto</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+<section class="hero-simple">
+    <h1>Tipografía</h1>
+    <p>La elección de nuestras letras refleja la personalidad y esencia de la marca.</p>
+</section>
+
+<section class="content-box">
+
+    <div class="tipografia-container">
+        <div class="tipografia-text">
+            <h2>Tipografía principal — "Sueños"</h2>
+            <p>Estilo handwritten, script amigable. Redondeada, suave y con sensación artesanal, pero legible incluso en tamaños pequeños. No es demasiado cursiva ni demasiado decorativa, está en el punto justo entre personalidad y claridad.</p>
+            <p>La elegimos porque representa lo hecho a mano y transmite cercanía y ternura. Conecta emocionalmente con quien la ve, sin sentirse corporativa ni fría. "Sueños" es la palabra emocional de la marca, por eso lleva la tipografía con más personalidad.</p>
+
+            <h2>Tipografía secundaria — "Tejidos"</h2>
+            <p>Estilo sans serif, limpia y ligera. Moderna, simple y equilibrada, sin adornos ni elementos decorativos. Su función es aportar estabilidad visual al conjunto.</p>
+            <p>La elegimos porque equilibra la tipografía handwritten y evita que el logo se vea demasiado informal. Aporta profesionalismo y mejora la legibilidad. "Tejidos" es la palabra funcional de la marca, por eso necesita una tipografía que transmita solidez.</p>
+
+            <h2>La lógica detrás de la combinación</h2>
+            <p>Ninguna de las dos tipografías funciona igual de bien sola. La handwritten sola resultaría demasiado informal; la sans serif sola, demasiado fría. Juntas logran el equilibrio que define a Sueños Tejidos: artesanal pero profesional, tierna pero vendible, emocional pero escalable.</p>
+            <p>La tipografía principal transmite calidez y creatividad artesanal, mientras que la secundaria aporta claridad y profesionalismo. El resultado es una identidad visual delicada pero comercialmente sólida.</p>
+        </div>
+
+        <div class="tipografia-image">
+            <img src="letras.jpeg" alt="Tipografía Sueños Tejidos">
+        </div>
+    </div>
+     <div class="botones">
+        <a href="logotipo.html" class="btn-main">
+            <i class="bi bi-image"></i> Nuestro Logo
+        </a>
+        <a href="colores.html" class="btn-main">
+            <i class="bi bi-palette"></i> Colores
+        </a>
+    </div>
+
+    <div class="volver-container">
+    <a href="introduccion.html" class="back-btn">
+        <i class="bi bi-arrow-left"></i> Volver
+    </a>
+
+    <div class="botones">
+        <a href="index.html" class="btn-main">
+            <i class="bi bi-arrow-left"></i> Volver al inicio
+        </a>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Sueños Tejidos - Hecho a mano con amor 🧶
+</footer>
+
+<script>
+const toggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("navbar-menu");
+
+toggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>
