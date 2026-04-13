@@ -1,0 +1,319 @@
+/* --- CONFIGURACIÓN GLOBAL --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- NAVEGACIÓN --- */
+.navbar {
+    background: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 20px;
+    color: #d46a92;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar-menu a:hover { color: #d46a92; }
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #d46a92;
+}
+
+/* --- HERO SECTION --- */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("imagenes/Fondo.png") no-repeat center center/cover;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-title {
+    font-size: clamp(32px, 5vw, 48px);
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    font-size: 18px;
+    margin-bottom: 35px;
+    max-width: 650px;
+}
+
+.btn-main {
+    background: #d46a92;
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-main:hover {
+    background: #b85075;
+    transform: translateY(-3px);
+}
+
+/* --- SECCIONES Y TARJETAS --- */
+.section-block { padding: 80px 20px; }
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #d46a92;
+    font-size: 32px;
+}
+
+.section-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card-custom {
+    background: #ffffff;
+    padding: 40px 30px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card-custom:hover { transform: translateY(-10px); }
+
+.icon-style {
+    font-size: 45px;
+    color: #d46a92;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* --- CTA MINI --- */
+.cta-mini {
+    background: #fdf8f8;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* --- FORMULARIO --- */
+.cta-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.cta-form input {
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    width: 300px;
+    outline: none;
+}
+
+.cta-form button {
+    background: #d46a92;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* --- FOOTER --- */
+footer {
+    background: #d46a92;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* ==========================================================================
+   AGREGADOS DE QUIÉNES SOMOS, USOS Y PRODUCTOS (SIN CAMBIAR LO ANTERIOR)
+   ========================================================================== */
+
+/* --- SECCIÓN USOS (GRID Y ANIMACIONES) --- */
+.usos-logo {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.grid-usos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.card-uso {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.card-uso:hover { transform: translateY(-8px); }
+
+.card-uso img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- QUIÉNES SOMOS (LOGO SECTION) --- */
+.logo-section {
+    max-width: 1100px;
+    margin: 60px auto;
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.logo-container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.logo-text p {
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.logo-image img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+/* --- PRODUCTOS (GRID) --- */
+.grid-productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card-producto {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.card-producto img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+/* --- BOTONES ADICIONALES --- */
+.back-btn {
+    padding: 12px 25px;
+    background: #d46a92;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* --- RESPONSIVE ADICIONAL --- */
+@media (max-width: 992px) {
+    .grid-usos { grid-template-columns: repeat(2, 1fr); }
+    .logo-container { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+    }
+    .navbar-menu.active { display: flex; }
+    .menu-toggle { display: block; }
+    .grid-usos { grid-template-columns: 1fr; }
+}
